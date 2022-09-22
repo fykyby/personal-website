@@ -1,0 +1,70 @@
+@use './shared.scss';
+
+.About {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  // min-height: 100vh;
+  padding: 2rem 1.6rem;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+    .name {
+      text-align: center;
+      font-size: 1.8rem;
+      letter-spacing: 0.12rem;
+    }
+
+    .skillsContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+
+      .title {
+        color: shared.$textColorSecondary;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: normal;
+      }
+
+      .skills {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem;
+        background-color: shared.$colorBg2;
+        border-radius: 0.8rem;
+        line-height: 0.6;
+        box-shadow: shared.$shadowInset;
+
+        img {
+          height: 2.2rem;
+          width: 2.2rem;
+        }
+      }
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      background-color: shared.$colorBg3;
+      min-height: 2.8rem;
+      border-radius: 0.8rem;
+      letter-spacing: 0.08rem;
+      box-shadow: shared.$shadow;
+      font-size: 1.2rem;
+    }
+  }
+}

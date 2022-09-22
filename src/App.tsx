@@ -1,3 +1,10 @@
+import "./styles/App.scss";
+import About from "./components/About";
+
 export default function App(): JSX.Element {
-  return <div></div>;
+  return (
+    <main className="App">
+      <About />
+    </main>
+  );
 }
