@@ -6,7 +6,7 @@ export default function About(): JSX.Element {
       <div className="info">
         <h1 className="name">Filip Bodnar</h1>
         <div className="skillsContainer">
-          <h2 className="title">Skills:</h2>
+          <h2 className="title">Skills</h2>
           <div className="skills">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
@@ -31,6 +31,10 @@ export default function About(): JSX.Element {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
               alt="sass"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+              alt="firebase"
             />
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"

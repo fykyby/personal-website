@@ -14,3 +14,17 @@ body {
   line-height: 1.6;
   letter-spacing: 0.06rem;;
 }
+
+
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  letter-spacing: 0.12rem;
+}
+
+h2 {
+  color: shared.$textColorSecondary;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
