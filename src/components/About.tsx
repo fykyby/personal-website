@@ -21,6 +21,10 @@ export default function About(): JSX.Element {
               alt="javascript"
             />
             <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
+              alt="typescript"
+            />
+            <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
               alt="react"
             />
@@ -50,7 +54,12 @@ export default function About(): JSX.Element {
         <a href="/" className="link">
           Contact
         </a>
-        <a href="/" className="link">
+        <a
+          href="https://github.com/fykyby"
+          className="link"
+          target="_blank"
+          rel="noreferrer"
+        >
           GitHub
         </a>
       </div>
