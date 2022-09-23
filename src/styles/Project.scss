@@ -75,3 +75,88 @@
 
   }
 }
+
+@media (min-width: shared.$breakpoint1) {
+  .Project {
+    .info {
+      padding: 2rem;
+      gap: 2rem;
+
+      .title {
+        font-size: 1.8rem;
+      }
+
+      .moreInfo {
+        .technologiesUsed {
+          gap: 1.6rem;
+
+          img {
+            width: 2.7rem;
+            height: 2.7rem;
+          }
+        }
+
+        .links {
+    
+          & > * {
+            height: 2.7rem;
+            width: 2.7rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: shared.$breakpoint2) {
+  .Project {
+    flex-direction: row;
+
+    .img {
+      margin-bottom: 0;
+      width: 65%;
+    }
+
+    .info {
+      align-items: center;
+      width: 35%;
+      padding: 1.2rem;
+      
+      .title {
+        font-size: 1.9rem;
+      }
+
+      .moreInfo {
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-between;
+        gap: 0.8rem;
+        width: 100%;
+
+        .technologiesUsed {
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          flex-wrap: wrap;
+          flex-grow: 1;
+          gap: 1rem;
+          padding-block: 2rem;
+
+          img {
+            height: 3.4rem;
+            width: 3.4rem;
+          }
+        }
+
+        .links {
+          gap: 1.2rem;
+
+          & > * {
+            height: 2.6rem;
+            width: 2.6rem;
+          }
+        }
+      }
+    }
+  }
+}

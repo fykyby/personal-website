@@ -1,3 +1,5 @@
+@use './shared.scss';
+
 .Projects {
   display: flex;
   flex-direction: column;
@@ -8,5 +10,11 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+  }
+}
+
+@media (min-width: shared.$breakpoint2) {
+  .Projects {
+    padding: 2rem 3rem;
   }
 }

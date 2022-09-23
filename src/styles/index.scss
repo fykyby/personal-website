@@ -12,9 +12,14 @@
 body {
   background-color: shared.$colorBg2;
   line-height: 1.6;
-  letter-spacing: 0.06rem;;
+  letter-spacing: 0.06rem;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 h1 {
   text-align: center;
