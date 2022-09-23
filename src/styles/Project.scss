@@ -62,6 +62,7 @@
         display: flex;
         gap: 0.8rem;
         justify-content: flex-end;
+        flex-wrap: wrap;
   
         & > * {
           height: 2.2rem;
