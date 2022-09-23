@@ -3,8 +3,33 @@ import "../styles/About.scss";
 export default function About(): JSX.Element {
   return (
     <section className="About">
-      <div className="info">
+      <div className="info1">
         <h1 className="name">Filip Bodnar</h1>
+        <p className="email">filipbodnar02@gmail.com</p>
+        <a
+          href="https://github.com/fykyby"
+          className="link"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="white"
+            className="popupIcon"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+            />
+          </svg>
+        </a>
+      </div>
+      <div className="info2">
         <div className="skillsContainer">
           <h2 className="title">Skills</h2>
           <div className="skills">
@@ -46,22 +71,6 @@ export default function About(): JSX.Element {
             />
           </div>
         </div>
-      </div>
-      <div className="links">
-        <a href="/" className="link">
-          Projects
-        </a>
-        <a href="/" className="link">
-          Contact
-        </a>
-        <a
-          href="https://github.com/fykyby"
-          className="link"
-          target="_blank"
-          rel="noreferrer"
-        >
-          GitHub
-        </a>
       </div>
     </section>
   );
