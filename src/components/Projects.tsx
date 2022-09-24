@@ -29,7 +29,7 @@ export default function Projects(): JSX.Element {
         <Project
           title="Fake-Instagram"
           imgSrc={imgFakeInsta}
-          liveLink="https://fake-instagram-f668b.web.app/"
+          liveLink="https://fykyby.github.io/fake-instagram/"
           repoLink="https://github.com/fykyby/fake-instagram"
           technologiesUsed={[
             {
