@@ -1,7 +1,9 @@
-  @use './shared.scss';
-  
+@use "./shared.scss";
+
 .Projects {
   background-color: shared.$colorBg2;
+  padding-block: 32px;
   min-height: 100vh;
- 
+  display: flex;
+  justify-content: center;
 }
