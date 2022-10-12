@@ -47,6 +47,24 @@
     font-weight: normal;
     font-size: 1.4rem;
     color: shared.$textColor3;
+
+    &::after {
+      position: absolute;
+      content: "_";
+      animation-name: anim;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+
+  @keyframes anim {
+    from {
+      content: "";
+    }
+    to {
+      content: "_";
+    }
   }
 
   .custom-shape-divider-bottom-1665589859 {
