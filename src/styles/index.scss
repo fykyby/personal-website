@@ -1,4 +1,4 @@
-@use './shared.scss';
+@use "./shared.scss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
@@ -10,26 +10,13 @@
 }
 
 body {
-  background-color: shared.$colorBg2;
-  line-height: 1.6;
-  letter-spacing: 0.06rem;
+  // background-color: shared.$colorBg1;
+  line-height: 1.4;
+  letter-spacing: 0.08rem;
 }
 
-#root {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-h1 {
-  text-align: center;
-  font-size: 2rem;
-  letter-spacing: 0.12rem;
-}
-
-h2 {
-  color: shared.$textColorSecondary;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: normal;
-}
+// #root {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }

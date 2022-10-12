@@ -1,15 +1,9 @@
 @use './shared.scss';
 
 .App {
-  display: flex;
-  flex-direction: column;
-  background-color: shared.$colorBg1;
-  max-width: shared.$breakpoint2;
-  box-shadow: shared.$shadow;
-}
-
-@media (min-width: shared.$breakpoint2) {
-  .App {
-    margin-block: 2rem;
-  }
+  // display: flex;
+  // flex-direction: column;
+  // background-color: shared.$colorBg1;
+  // max-width: shared.$breakpoint2;
+  // box-shadow: shared.$shadow;
 }
