@@ -1,0 +1,69 @@
+@use "./shared.scss";
+
+.Project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: shared.$colorBg1;
+  border-radius: shared.$borderRadius;
+  width: 100%;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    box-shadow: shared.$shadowInset;
+    border-radius: shared.$borderRadius;
+    pointer-events: none;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: shared.$borderRadius;
+    border-top-right-radius: shared.$borderRadius;
+  }
+
+  .info {
+    width: 100%;
+    padding-block: 0.8rem;
+    gap: 0.8rem;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      text-align: center;
+    }
+
+    .bottomWrapper {
+      display: flex;
+      justify-content: space-between;
+      padding-inline: 0.8rem;
+
+      .left,
+      .right {
+        display: flex;
+        gap: 0.6rem;
+
+        i {
+          font-size: 2rem;
+        }
+      }
+
+      .right {
+        a {
+          text-decoration: none;
+        }
+
+        svg {
+          height: 2rem;
+          width: 2rem;
+        }
+      }
+    }
+  }
+}

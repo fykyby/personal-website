@@ -2,8 +2,16 @@
 
 .Projects {
   background-color: shared.$colorBg2;
-  padding-block: 32px;
-  min-height: 100vh;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding-block: 2.4rem;
+  padding-inline: 0.6rem;
+
+  .projectList {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 }

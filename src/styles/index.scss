@@ -5,8 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  color: shared.$textColor;
-  box-sizing: border-box;
+  color: shared.$textColor2;
 }
 
 body {
@@ -15,8 +14,8 @@ body {
 }
 
 h1 {
-  font-weight: bold;
   letter-spacing: 0.14rem;
+  font-weight: bold;
   font-size: 2rem;
   color: shared.$textColor2;
 }
@@ -25,6 +24,12 @@ h2 {
   font-weight: normal;
   font-size: 1.2rem;
   color: shared.$textColor3;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: shared.$textColor2;
 }
 
 // #root {
