@@ -17,8 +17,11 @@
     text-decoration: none;
     padding: 0.7rem;
     font-size: 1.1rem;
+    transition: background-color 0.2s ease-in-out;
 
     &:hover {
+      background-color: shared.$colorBg2;
+
       &::after {
         width: 100%;
       }
@@ -36,18 +39,7 @@
     }
   }
 
-  h1 {
-    font-weight: bold;
-    letter-spacing: 0.14rem;
-    font-size: 2rem;
-    color: shared.$textColor2;
-  }
-
   h2 {
-    font-weight: normal;
-    font-size: 1.4rem;
-    color: shared.$textColor3;
-
     &::after {
       position: absolute;
       content: "_";
@@ -67,7 +59,7 @@
     }
   }
 
-  .custom-shape-divider-bottom-1665589859 {
+  .divider {
     position: absolute;
     bottom: 0;
     left: 0;

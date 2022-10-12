@@ -8,7 +8,7 @@ export default function About(): JSX.Element {
       </a>
       <h1>Filip Bodnar</h1>
       <h2>Frontend Developer</h2>
-      <div className="custom-shape-divider-bottom-1665589859">
+      <div className="divider">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"

@@ -10,9 +10,21 @@
 }
 
 body {
-  // background-color: shared.$colorBg1;
   line-height: 1.4;
   letter-spacing: 0.08rem;
+}
+
+h1 {
+  font-weight: bold;
+  letter-spacing: 0.14rem;
+  font-size: 2rem;
+  color: shared.$textColor2;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: shared.$textColor3;
 }
 
 // #root {
