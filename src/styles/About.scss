@@ -9,33 +9,40 @@
   align-items: center;
   flex-direction: column;
 
-  a {
+  nav {
+    display: flex;
     position: absolute;
+    gap: 0.4rem;
     top: 0;
     right: 0;
-    color: shared.$textColor2;
-    text-decoration: none;
-    padding: 0.7rem;
-    font-size: 1.1rem;
-    transition: background-color 0.2s ease-in-out;
+    padding: 0.4rem;
 
-    &:hover {
-      background-color: shared.$colorBg2;
+    a {
+      color: shared.$textColor2;
+      text-decoration: none;
+      padding: 0.4rem;
+      font-size: 1.1rem;
+      transition: background-color 0.2s ease-in-out;
+      position: relative;
+
+      &:hover {
+        background-color: shared.$colorBg2;
+
+        &::after {
+          width: 100%;
+        }
+      }
 
       &::after {
-        width: 100%;
+        content: "";
+        position: absolute;
+        border-bottom: 2px solid shared.$textColor2;
+        height: 2px;
+        width: 0%;
+        right: 0;
+        bottom: 0;
+        transition: width 0.2s ease-in-out;
       }
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      border-bottom: 2px solid shared.$textColor2;
-      height: 2px;
-      width: 0%;
-      right: 0;
-      bottom: 0;
-      transition: width 0.2s ease-in-out;
     }
   }
 
