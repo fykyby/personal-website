@@ -1,20 +1,71 @@
-@use './shared.scss';
+@use "./shared.scss";
 
 .Projects {
+  background-color: shared.$colorBg2;
   display: flex;
+  align-items: center;
   flex-direction: column;
-  gap: 1rem;
-  padding: 2rem 1.6rem;
+  gap: 2rem;
+  padding-block: calc(2rem + var(--dividerHeight));
+  padding-inline: 0.6rem;
+  position: relative;
+  margin-block: -(var(--dividerHeight));
 
   .projectList {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
+
+  .divider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    background-color: shared.$colorBg1;
+
+    & svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: var(--dividerHeight);
+    }
+
+    & .shape-fill {
+      fill: shared.$colorBg2;
+    }
+  }
+
+  .divider2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background-color: shared.$colorBg1;
+
+    & svg {
+      position: relative;
+      display: block;
+      width: calc(168% + 1.3px);
+      height: var(--dividerHeight);
+      transform: rotateY(180deg);
+    }
+
+    & .shape-fill {
+      fill: shared.$colorBg2;
+    }
+  }
 }
 
-@media (min-width: shared.$breakpoint2) {
+@media (min-width: shared.$breakpoint1) {
   .Projects {
-    padding: 2rem 3rem;
+    .projectList {
+      gap: 2.4rem;
+    }
   }
 }

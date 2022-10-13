@@ -1,41 +1,36 @@
 import "../styles/Project.scss";
 
 interface Props {
+  img: string;
   title: string;
-  imgSrc: string;
-  liveLink: string;
   repoLink: string;
-  technologiesUsed: Array<any>;
+  demoLink: string;
+  techIcons: Array<string>;
 }
 
-export default function Project({
-  title,
-  imgSrc,
-  liveLink,
-  repoLink,
-  technologiesUsed,
-}: Props): JSX.Element {
+export default function Project(props: Props): JSX.Element {
   return (
     <article className="Project">
-      <div className="img">
-        <img src={imgSrc} alt={title} />
-      </div>
+      <img src={props.img} alt="project screenshot" />
       <div className="info">
-        <h2 className="title">{title}</h2>
-        <div className="moreInfo">
-          <div className="technologiesUsed">
-            {technologiesUsed.map((item, index) => {
-              return <img src={item.url} alt={item.alt} key={index} />;
+        <h3 className="title">{props.title}</h3>
+        <div className="bottomWrapper">
+          <div className="left">
+            {props.techIcons.map((item, index) => {
+              return <i className={item} key={index}></i>;
             })}
           </div>
-          <div className="links">
-            <a href={liveLink} target="_blank" rel="noreferrer">
+          <div className="right">
+            <a href={props.repoLink} target="_blank" rel="noreferrer">
+              <i className="devicon-github-original"></i>
+            </a>
+            <a href={props.demoLink} target="_blank" rel="noreferrer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="#181616"
+                strokeWidth="1.5"
+                stroke="currentColor"
               >
                 <path
                   strokeLinecap="round"
@@ -43,12 +38,6 @@ export default function Project({
                   d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
                 />
               </svg>
-            </a>
-            <a href={repoLink} target="_blank" rel="noreferrer">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                alt=""
-              />
             </a>
           </div>
         </div>
