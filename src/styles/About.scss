@@ -11,7 +11,9 @@
 
   nav {
     display: flex;
+    justify-content: flex-end;
     position: absolute;
+    width: 100%;
     gap: 0.4rem;
     top: 0;
     right: 0;
@@ -63,6 +65,27 @@
     }
     to {
       content: "_";
+    }
+  }
+}
+
+@media (min-width: shared.$breakpoint1) {
+  .About {
+    nav {
+      a {
+        padding: 0.8rem;
+      }
+    }
+  }
+}
+
+@media (min-width: shared.$breakpoint3) {
+  .About {
+    nav {
+      width: shared.$breakpoint3;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
     }
   }
 }

@@ -32,6 +32,26 @@ h3 {
   color: shared.$textColor2;
 }
 
+@media (min-width: shared.$breakpoint1) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: shared.$breakpoint3) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+
 // #root {
 //   display: flex;
 //   flex-direction: column;

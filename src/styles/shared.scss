@@ -11,7 +11,16 @@ $shadowInset: inset 2px 2px 4px 0px rgba(0, 0, 0, 0.5);
 
 $borderRadius: 0.6rem;
 
-$breakpoint1: 580px;
-$breakpoint2: 880px;
+$breakpoint1: 540px;
+$breakpoint2: 770px;
+$breakpoint3: 1000px;
 
-$dividerHeight: 34px;
+:root {
+  --dividerHeight: 34px;
+}
+
+@media (min-width: $breakpoint2) {
+  :root {
+    --dividerHeight: 80px;
+  }
+}
