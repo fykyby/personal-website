@@ -69,3 +69,10 @@
     }
   }
 }
+
+@media (min-width: shared.$breakpoint2) {
+  .Projects {
+    gap: 3rem;
+    padding-block: calc(3rem + var(--dividerHeight));
+  }
+}
