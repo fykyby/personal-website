@@ -10,6 +10,7 @@
   padding-inline: 0.6rem;
   position: relative;
   margin-block: -(var(--dividerHeight));
+  overflow: hidden;
 
   .projectList {
     display: flex;

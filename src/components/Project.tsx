@@ -10,7 +10,7 @@ interface Props {
 
 export default function Project(props: Props): JSX.Element {
   return (
-    <article className="Project">
+    <article className="Project" data-aos="fade-left">
       <img src={props.img} alt="project screenshot" />
       <div className="info">
         <h3 className="title">{props.title}</h3>

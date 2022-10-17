@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../styles/About.scss";
+
 const scrollToElement = require("scroll-to-element");
 
 export default function About(): JSX.Element {
@@ -48,8 +49,8 @@ export default function About(): JSX.Element {
           Contact
         </a>
       </nav>
-      <h1>Filip Bodnar</h1>
-      <h2>{`~$ ${text}`}</h2>
+      <h1 data-aos="fade-left">Filip Bodnar</h1>
+      <h2 data-aos="fade-left" data-aos-delay="200">{`~$ ${text}`}</h2>
     </section>
   );
 }
