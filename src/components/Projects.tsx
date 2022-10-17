@@ -1,9 +1,9 @@
 import "../styles/Projects.scss";
 import Project from "./Project";
-import imgFakeInsta from "../images/fakeinsta.png";
-import imgYtMusic from "../images/ytmusicplayer.png";
-import imgBattleship from "../images/battleship.png";
-import imgSnake from "../images/snake.png";
+import imgFakeInsta from "../images/fakeinsta.webp";
+import imgYtMusic from "../images/ytmusicplayer.webp";
+import imgBattleship from "../images/battleship.webp";
+import imgSnake from "../images/snake.webp";
 
 export default function Projects(): JSX.Element {
   return (

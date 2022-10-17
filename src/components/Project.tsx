@@ -11,7 +11,7 @@ interface Props {
 export default function Project(props: Props): JSX.Element {
   return (
     <article className="Project" data-aos="fade-left">
-      <img src={props.img} alt="project screenshot" />
+      <img src={props.img} alt="project screenshot" loading="lazy" />
       <div className="info">
         <h3 className="title">{props.title}</h3>
         <div className="bottomWrapper">
