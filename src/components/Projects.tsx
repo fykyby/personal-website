@@ -4,6 +4,7 @@ import imgFakeInsta from "../images/fakeinsta.webp";
 import imgYtMusic from "../images/ytmusicplayer.webp";
 import imgBattleship from "../images/battleship.webp";
 import imgSnake from "../images/snake.webp";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export default function Projects(): JSX.Element {
   return (
@@ -31,7 +32,9 @@ export default function Projects(): JSX.Element {
           ></path>
         </svg>
       </div>
-      <h1 data-aos="fade-left">Projects</h1>
+      <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
+        <h1>Projects</h1>
+      </AnimationOnScroll>
       <div className="projectList">
         <Project
           title="Music Player for YouTube"
