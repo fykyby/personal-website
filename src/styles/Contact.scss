@@ -30,3 +30,9 @@
     }
   }
 }
+
+@media (min-width: shared.$breakpoint1) {
+  .Contact {
+    padding-block: 4rem;
+  }
+}
