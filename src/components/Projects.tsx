@@ -4,6 +4,7 @@ import imgFakeInsta from "../images/fakeinsta.webp";
 import imgYtMusic from "../images/ytmusicplayer.webp";
 import imgBattleship from "../images/battleship.webp";
 import imgSnake from "../images/snake.webp";
+import imgAkacjowyKalkulator from "../images/akacjowykalkulator.webp";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export default function Projects(): JSX.Element {
@@ -56,6 +57,17 @@ export default function Projects(): JSX.Element {
             "devicon-tailwindcss-plain colored",
             "devicon-firebase-plain colored",
           ]}
+        />
+        <Project
+          title="Akacjowy Kalkulator"
+          img={imgAkacjowyKalkulator}
+          repoLink={"https://github.com/fykyby/akacjowy-kalkulator"}
+          demoLink={""}
+          techIcons={[
+            "devicon-react-original colored",
+            "devicon-electron-original colored",
+          ]}
+          noDemo
         />
         <Project
           title="Battleship"
