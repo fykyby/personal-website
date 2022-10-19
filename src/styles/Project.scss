@@ -67,6 +67,35 @@
         }
       }
 
+      .left {
+        .iconGroup {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+
+          i {
+            &:hover {
+              & + span {
+                opacity: 1;
+              }
+            }
+          }
+
+          span {
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: shared.$borderRadius;
+            padding: 0.4rem;
+            position: absolute;
+            top: -2.6rem;
+            width: fit-content;
+            opacity: 0;
+            transition: opacity 0.2s;
+            font-size: 1.2rem;
+          }
+        }
+      }
+
       .right {
         & > * {
           border-radius: shared.$borderRadius;

@@ -11,6 +11,13 @@ interface Props {
 }
 
 export default function Project(props: Props): JSX.Element {
+  function getTechName(className: string): string {
+    let newName = className;
+    newName = newName.slice(8, -1);
+    newName = newName.substring(0, newName.indexOf("-"));
+    return newName;
+  }
+
   return (
     <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
       <article className="Project">
@@ -20,7 +27,12 @@ export default function Project(props: Props): JSX.Element {
           <div className="bottomWrapper">
             <div className="left">
               {props.techIcons.map((item, index) => {
-                return <i className={item} key={index}></i>;
+                return (
+                  <div className="iconGroup" key={index}>
+                    <i className={item}></i>
+                    <span>{getTechName(item)}</span>
+                  </div>
+                );
               })}
             </div>
             <div className="right">
