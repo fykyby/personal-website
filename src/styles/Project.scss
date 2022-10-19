@@ -155,6 +155,7 @@
       justify-content: center;
 
       .title {
+        margin-top: 3.4rem;
         display: flex;
         flex-grow: 1;
         justify-content: center;
@@ -163,8 +164,6 @@
       }
 
       .bottomWrapper {
-        // padding: 1rem;
-
         .left,
         .right {
           gap: 0.4rem;
