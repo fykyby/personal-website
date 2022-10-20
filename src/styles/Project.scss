@@ -39,17 +39,15 @@
     }
 
     .bottomWrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 0.4rem;
       padding-inline: 0.8rem;
-      flex-wrap: wrap;
 
       .left,
       .right {
         display: flex;
-        align-items: center;
+        align-content: center;
         gap: 0.2rem;
         flex-wrap: wrap;
 
@@ -72,6 +70,7 @@
       }
 
       .left {
+        justify-content: flex-start;
         .iconGroup {
           display: flex;
           align-items: center;
@@ -96,11 +95,13 @@
             opacity: 0;
             transition: opacity 0.2s;
             font-size: 1.2rem;
+            user-select: none;
           }
         }
       }
 
       .right {
+        justify-content: flex-end;
         & > * {
           border-radius: shared.$borderRadius;
           transition: background-color 0.2s ease-in-out;
