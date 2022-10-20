@@ -32,6 +32,7 @@
 
 @media (min-width: shared.$breakpoint1) {
   .Contact {
-    padding-block: 4rem;
+    padding-top: 4rem;
+    padding-bottom: calc(2rem + var(--dividerHeight));
   }
 }
