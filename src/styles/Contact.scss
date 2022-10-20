@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  padding-block: calc(2rem + var(--dividerHeight));
+  padding-block: 4rem;
   background-color: shared.$colorBg1;
 
   .info {
@@ -32,6 +32,6 @@
 
 @media (min-width: shared.$breakpoint1) {
   .Contact {
-    padding-block: calc(1rem + var(--dividerHeight));
+    padding-block: 4rem;
   }
 }
