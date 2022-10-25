@@ -43,8 +43,8 @@ export default function Projects(): JSX.Element {
           repoLink={"https://github.com/fykyby/music-player-for-youtube"}
           demoLink={"https://fykyby.github.io/music-player-for-youtube/"}
           techIcons={[
-            "devicon-react-original colored",
             "devicon-typescript-plain colored",
+            "devicon-react-original colored",
           ]}
         />
         <Project
@@ -64,6 +64,7 @@ export default function Projects(): JSX.Element {
           repoLink={"https://github.com/fykyby/akacjowy-kalkulator"}
           demoLink={""}
           techIcons={[
+            "devicon-typescript-plain colored",
             "devicon-react-original colored",
             "devicon-electron-original colored",
           ]}
