@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.239102d1.css",
+    "main.css": "/static/css/main.19298748.css",
     "main.js": "/static/js/main.5af83f11.js",
     "static/media/ytmusicplayer.webp": "/static/media/ytmusicplayer.8aae83822718b6c97ef1.webp",
     "static/media/fakeinsta.webp": "/static/media/fakeinsta.72213f50fa42fb8c5e45.webp",
@@ -8,11 +8,11 @@
     "static/media/akacjowykalkulator.webp": "/static/media/akacjowykalkulator.584c09298a58512ee5a6.webp",
     "static/media/snake.webp": "/static/media/snake.940d2651eaf76da9164d.webp",
     "index.html": "/index.html",
-    "main.239102d1.css.map": "/static/css/main.239102d1.css.map",
+    "main.19298748.css.map": "/static/css/main.19298748.css.map",
     "main.5af83f11.js.map": "/static/js/main.5af83f11.js.map"
   },
   "entrypoints": [
-    "static/css/main.239102d1.css",
+    "static/css/main.19298748.css",
     "static/js/main.5af83f11.js"
   ]
 }
