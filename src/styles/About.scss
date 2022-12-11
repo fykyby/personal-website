@@ -19,13 +19,17 @@
     right: 0;
     padding: 0.4rem;
 
-    a {
+    a,
+    button {
       color: shared.$textColor2;
+      background-color: transparent;
+      border: none;
       text-decoration: none;
       padding: 0.4rem;
       font-size: 1.1rem;
       transition: background-color 0.2s ease-in-out;
       position: relative;
+      cursor: pointer;
 
       &:hover {
         background-color: shared.$colorBg2;
@@ -72,7 +76,8 @@
 @media (min-width: shared.$breakpoint1) {
   .About {
     nav {
-      a {
+      a,
+      button {
         padding: 0.8rem;
       }
     }

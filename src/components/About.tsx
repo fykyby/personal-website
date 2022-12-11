@@ -24,11 +24,7 @@ export default function About(): JSX.Element {
     }
   }
 
-  function scrollToSection(
-    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
-    targetSelector: string
-  ) {
-    e.preventDefault();
+  function scrollToSection(targetSelector: string) {
     scrollToElement(targetSelector, {
       ease: "out-sine",
       duration: 600,
@@ -41,14 +37,7 @@ export default function About(): JSX.Element {
         <a href="https://github.com/fykyby" target="_blank" rel="noreferrer">
           GitHub
         </a>
-        <a
-          href="/"
-          onClick={(e) => {
-            scrollToSection(e, ".Contact");
-          }}
-        >
-          Contact
-        </a>
+        <button onClick={() => scrollToSection(".Contact")}>Contact</button>
       </nav>
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
         <h1>Filip Bodnar</h1>
